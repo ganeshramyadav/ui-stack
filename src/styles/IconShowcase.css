@@ -1,0 +1,10 @@
+.icon-showcase
+{
+    display:flex;
+    flex-flow: wrap;
+}
+
+
+.icon-showcase .item{
+    padding: 5px;
+}

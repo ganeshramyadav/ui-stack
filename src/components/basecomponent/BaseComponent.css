@@ -1,0 +1,12 @@
+.base-showcase
+{
+    padding: 10px;
+    width: 100%;
+    height: auto;
+    overflow: auto;
+}
+
+#example .pt-tab-list
+{
+padding :20px;
+}
