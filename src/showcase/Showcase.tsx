@@ -14,6 +14,9 @@ import {ButtonShowCase} from './ButtonShowCase';
 
 import {ButtonGroupShowCase} from './ButtonGroupShowCase';
 import {CallOutShowCase} from './CallOutShowCase';
+import {ToastShowcase} from './ToasterShowCase';
+
+
 export interface ShowcaseProps { compiler: string; framework: string; }
 
 // 'HelloProps' describes the shape of props.
@@ -33,6 +36,7 @@ export class Showcase extends React.Component<ShowcaseProps, {}> {
             <Tab id='tb' title='Button' panel={this.renderBaseComponent(<ButtonShowCase />)} />
             <Tab id='tbgroup' title='ButtonGroup' panel={this.renderBaseComponent(<ButtonGroupShowCase />)} />
             <Tab id='co' title='CallOut' panel={this.renderBaseComponent(<CallOutShowCase />)} />
+            <Tab id='to' title='Toaster' panel={this.renderBaseComponent(<ToastShowcase />)} />
         </Tabs>)
     }
 
