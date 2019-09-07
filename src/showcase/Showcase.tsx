@@ -1,6 +1,5 @@
 import * as React from 'react';
-import * as Blueprint from '@blueprintjs/core';
-import { Tabs, Tab, Button } from '@blueprintjs/core';
+import { Tabs, Tab } from '@blueprintjs/core';
 import { BaseComponent } from '../components/basecomponent/BaseComponent';
 import { InputNumberShowcase } from './InputNumberShowcase';
 import { InputTextShowcase } from './InputTextShowcase';
@@ -9,6 +8,10 @@ import { InputPasswordShowcase } from './InputPasswordShowcase';
 import { InputSearchShowcase } from './InputSearchShowcase';
 import { IconShowcase } from './IconShowcase';
 import { FirebaseShowCase } from './FirebaseShowCase';
+import {ButtonShowCase} from './ButtonShowCase';
+
+import {ButtonGroupShowCase} from './ButtonGroupShowCase';
+import {CallOutShowCase} from './CallOutShowCase';
 export interface ShowcaseProps { compiler: string; framework: string; }
 
 // 'HelloProps' describes the shape of props.
@@ -23,7 +26,9 @@ export class Showcase extends React.Component<ShowcaseProps, {}> {
             <Tab id='icon' title='Icons' panel={this.renderBaseComponent(<IconShowcase />)} />
             <Tab id='ts' title='TextSearch' panel={this.renderBaseComponent(<InputSearchShowcase />)} />
             <Tab id='firebase' title='FirebaseShowCase' panel={this.renderBaseComponent(<FirebaseShowCase />)} />
-            <Tab id='tb' title='Button' panel={this.renderBaseComponent(<Button />)} />
+            <Tab id='tb' title='Button' panel={this.renderBaseComponent(<ButtonShowCase />)} />
+            <Tab id='tbgroup' title='ButtonGroup' panel={this.renderBaseComponent(<ButtonGroupShowCase />)} />
+            <Tab id='co' title='CallOut' panel={this.renderBaseComponent(<CallOutShowCase />)} />
         </Tabs>)
     }
 
