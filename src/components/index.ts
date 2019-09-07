@@ -10,3 +10,4 @@ export * from './button';
 export * from './checkbox';
 export * from './buttongroup';
 export * from './callout';
+export * from './toast';
