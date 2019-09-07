@@ -9,6 +9,8 @@ import { InputPasswordShowcase } from './InputPasswordShowcase';
 import { InputSearchShowcase } from './InputSearchShowcase';
 import { IconShowcase } from './IconShowcase';
 import { FirebaseShowCase } from './FirebaseShowCase';
+import { CheckBoxShowCase} from './CheckBoxShowCase';
+
 export interface ShowcaseProps { compiler: string; framework: string; }
 
 // 'HelloProps' describes the shape of props.
@@ -23,7 +25,8 @@ export class Showcase extends React.Component<ShowcaseProps, {}> {
             <Tab id='icon' title='Icons' panel={this.renderBaseComponent(<IconShowcase />)} />
             <Tab id='ts' title='TextSearch' panel={this.renderBaseComponent(<InputSearchShowcase />)} />
             <Tab id='firebase' title='FirebaseShowCase' panel={this.renderBaseComponent(<FirebaseShowCase />)} />
-            <Tab id='tb' title='Button' panel={this.renderBaseComponent(<Button />)} />
+            <Tab id='chkbox' title='CheckBoxShowCase' panel={this.renderBaseComponent(<CheckBoxShowCase />)} />
+            
         </Tabs>)
     }
 

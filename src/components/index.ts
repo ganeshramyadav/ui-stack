@@ -7,3 +7,4 @@ export * from './icon';
 export * from './cards';
 export * from './inputsearch';
 export * from './button';
+export * from './checkbox';
