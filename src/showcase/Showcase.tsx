@@ -8,6 +8,8 @@ import { InputPasswordShowcase } from './InputPasswordShowcase';
 import { InputSearchShowcase } from './InputSearchShowcase';
 import { IconShowcase } from './IconShowcase';
 import { FirebaseShowCase } from './FirebaseShowCase';
+import { CheckBoxShowCase} from './CheckBoxShowCase';
+
 import {ButtonShowCase} from './ButtonShowCase';
 
 import {ButtonGroupShowCase} from './ButtonGroupShowCase';
@@ -26,6 +28,8 @@ export class Showcase extends React.Component<ShowcaseProps, {}> {
             <Tab id='icon' title='Icons' panel={this.renderBaseComponent(<IconShowcase />)} />
             <Tab id='ts' title='TextSearch' panel={this.renderBaseComponent(<InputSearchShowcase />)} />
             <Tab id='firebase' title='FirebaseShowCase' panel={this.renderBaseComponent(<FirebaseShowCase />)} />
+            <Tab id='chkbox' title='CheckBoxShowCase' panel={this.renderBaseComponent(<CheckBoxShowCase />)} />
+            
             <Tab id='tb' title='Button' panel={this.renderBaseComponent(<ButtonShowCase />)} />
             <Tab id='tbgroup' title='ButtonGroup' panel={this.renderBaseComponent(<ButtonGroupShowCase />)} />
             <Tab id='co' title='CallOut' panel={this.renderBaseComponent(<CallOutShowCase />)} />
