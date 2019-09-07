@@ -11,3 +11,4 @@ export * from './checkbox';
 export * from './buttongroup';
 export * from './callout';
 export * from './toast';
+export * from './inputradio';
