@@ -15,6 +15,9 @@ import {ButtonShowCase} from './ButtonShowCase';
 import {ButtonGroupShowCase} from './ButtonGroupShowCase';
 import {CallOutShowCase} from './CallOutShowCase';
 import {ToastShowcase} from './ToasterShowCase';
+import {InputRadioboxShowCase} from './InputRadioboxShowCase';
+import {SpinnerShowCase} from './SpinnerShowCase';
+
 
 
 export interface ShowcaseProps { compiler: string; framework: string; }
@@ -37,6 +40,8 @@ export class Showcase extends React.Component<ShowcaseProps, {}> {
             <Tab id='tbgroup' title='ButtonGroup' panel={this.renderBaseComponent(<ButtonGroupShowCase />)} />
             <Tab id='co' title='CallOut' panel={this.renderBaseComponent(<CallOutShowCase />)} />
             <Tab id='to' title='Toaster' panel={this.renderBaseComponent(<ToastShowcase />)} />
+            <Tab id='ir' title='Radio' panel={this.renderBaseComponent(<InputRadioboxShowCase />)} />
+            <Tab id='sp' title='Spinner' panel={this.renderBaseComponent(<SpinnerShowCase />)} />
         </Tabs>)
     }
 
